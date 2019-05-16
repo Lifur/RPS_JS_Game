@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Project_9.7_JS_Game</title>
+    <!-- Podpięcie plików stylów Bootstrap oraz FontAwesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+    <!-- Dołączenie style.css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+
+  <body>
+    <!-- Tytuł gry -->
+    <div class="container">
+      <h2 class="title text-center">Welcome to the Game!</h2>
+        <div class="text-center h3">
+          <span class="label label-success">Rock</span>
+          <span class="label label-info">Paper</span>
+          <span class="label label-danger">Scissors</span>
+        </div>
+    </div>
+    <!-- Przycisk zainicjowania nowej gry -->
+    <!-- id do odwołania się w JS -->
+    <div id="js-newGameElement" class="container">
+      <div class="row text-center">
+        <button id="js-newGameButton" class="newGame btn btn-warning">
+          New Game
+        </button>
+      </div>
+    </div>
+    <!-- Wybór gracza: -->
+    <div id="js-playerPickElement" class="container">
+      <div class="row text-center">
+        <!-- Button_Rock -->
+        <button id="js-playerPick_rock" class="btn">
+          <span class="badge">
+            <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+          </span>
+          Rock
+        </button>
+        <!-- Button_Paper -->
+        <button id="js-playerPick_paper" class="btn">
+          <span class="badge">
+            <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+          </span>
+          Paper
+        </button>
+        <!-- Button_Scissors -->
+        <button id="js-playerPick_scissors" class="btn">
+          <span class="badge">
+            <i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
+          </span>
+          Scissors
+        </button>
+      </div>
+    </div>
+    <!-- Tabela wyników:  aktualny stan gry - wybór gracza, punktacja oraz wynik pojedynczej rundy; elementy tabeli wyników będą aktualizowane z przebiegiem gry.-->
+    <div id="js-resultsTableElement" class="container table">
+      <!-- Rząd 1 -->
+      <div class="row">
+        <!-- Kolumna lewa -->
+        <div class="col-xs-5 text-center">
+          <span id="js-playerPoints" class="badge">
+            0
+          </span>
+          <span id="js-playerName">
+            Player Name
+          </span>
+        </div>
+        <!-- Kolumna środkowa -->
+        <div class="col-xs-2 text-center">
+          VS.
+        </div>
+        <!-- Kolumna prawa -->
+        <div class="col-xs-5 text-center">
+          <span id="js-computerPoints" class="badge">
+            0
+          </span>
+          Computer
+        </div>
+
+      </div>
+      <!-- Rząd 2 -->
+      <div class="row">
+        <!-- Kolumna lewa -->
+        <div class="col-xs-5 text-center">
+          <span id="js-playerPick">
+            Player selection
+          </span>
+        </div>
+        <!-- Kolumna środkowa -->
+        <div class="col-xs-2"></div>
+        <!-- Kolumna prawa -->
+        <div class="col-xs-5 text-center">
+          <span id="js-computerPick">
+            Computer selection
+          </span>
+        </div>
+
+      </div>
+      <!-- Rząd 3 -->
+      <div class="row">
+        <!-- Kolumna lewa -->
+        <div class="col-xs-5 text-center">
+          <span id="js-playerResult">
+            Player Score
+          </span>
+        </div>
+        <!-- Kolumna środkowa -->
+        <div class="col-xs-2"></div>
+        <!-- Kolumna prawa -->
+        <div class="col-xs-5 text-center">
+          <span id="js-computerResult">
+            Computer Score
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Podpięcie pliku JS -->
+    <script type='text/javascript' src='js/scripts.js'></script>
+  </body>
+
+</html>

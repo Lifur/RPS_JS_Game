@@ -1,0 +1,27 @@
+/*CSS*/
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+/*Tło */
+body {
+  background-color: #71727E;
+}
+/*Odstępy pomiędzy kontenerami*/
+.container {
+  padding: 10px;
+}
+/*Stylizowanie tytułu, labeli, buttona*/
+.title {
+  font-family: 'Indie Flower', cursive;
+  color: #fff;
+}
+.label {
+  width: 120px;
+  display: inline-block;
+  font-family: 'Indie Flower', cursive;
+}
+.newGame {
+  font-family: 'Indie Flower', cursive;
+}
+.table {
+  color: #fff;
+}
